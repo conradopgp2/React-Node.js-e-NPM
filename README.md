@@ -132,8 +132,27 @@ p {
 
 ## Considerações finais
 
- | Unidade |               |Relativa a|                              |Melhor Uso|                   |Exemplo|
+ | Unidade |               |Relativa a|                                          |Melhor Uso|                                              |Exemplo|
 
-  | REM |      | Tamanho da fonte do elemento raiz |    | Layouts escaláveis e consistentes |  | font-size: 2rem |
-     
-     %
+  | REM |      | Tamanho da fonte do elemento raiz |                | Layouts escaláveis e consistentes |                             | font-size: 2rem |
+
+   | % |            | Tamanho do elemento pai |              | Layouts fluidos, onde o tamanho é proporcional ao container |                |  width: 50%; |
+   
+   | VW |       | Largura da janela de visualização |           | Elementos que devem se ajustar ao tamanho da tela |                       |  width: 50vw; |
+   
+   | PX |       | Valor absoluto (pixels na tela) |    | Controle preciso e consistente, sem variações com o tamanho do container |        | font-size: 16px; |
+
+ 
+ REM é uma excelente escolha para garantir escalabilidade
+ e consistência no layout, permitindo que você altere a raiz
+ da página e ajuste automaticamente todo o design.
+ % e VW são fundamentais para layouts fluidos e
+ adaptativos, especialmente em sites responsivos que
+ precisam se ajustar ao tamanho da tela do usuário.
+ PX ainda é útil quando você precisa de controle exato e
+ consistente sobre tamanhos, especialmente em elementos
+ que não devem ser afetados por mudanças de contexto.
+ Compreender como e quando usar cada uma dessas unidades
+ ajuda a criar interfaces que funcionam em qualquer dispositivo,
+ garantindo uma experiência de usuário mais eficiente e
+ agradável.
