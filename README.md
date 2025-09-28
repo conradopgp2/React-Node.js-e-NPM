@@ -135,5 +135,5 @@ p {
  | Unidade |               |Relativa a|                              |Melhor Uso|                   |Exemplo|
 
   | REM |      | Tamanho da fonte do elemento raiz |    | Layouts escaláveis e consistentes |  | font-size: 2rem |
-
      
+     %
