@@ -2,7 +2,7 @@
 
 ## Unidades de medidas
 
-```
+
 ## Introdução 
 
 No CSS, as unidades de medida são essenciais para definir
@@ -32,7 +32,7 @@ No CSS, as unidades de medida são essenciais para definir
  escalabilidade, permitindo que o layout se adapte de
  forma fluida e natural.
 
-# REM
+## REM
 
 A unidade REM é relativa ao tamanho da fonte do elemento
  raiz da página (geralmente o elemento <html>). Isso significa
@@ -44,7 +44,7 @@ A unidade REM é relativa ao tamanho da fonte do elemento
  então 1rem = 16px.
 
 
-# Exemplo:
+## Exemplo:
 html {
   font-size: 16px;
 }
@@ -52,14 +52,14 @@ p {
   font-size: 2rem; /* 2 * 16px = 32px */
 }
 
- #Vantagens:
+ ## Vantagens:
  Escalabilidade simples: ao alterar o tamanho da fonte do
  <html>, todo o layout se ajusta proporcionalmente.
  Facilita a acessibilidade: usuários podem ajustar o tamanho
  da fonte em seus navegadores, o que impacta diretamente
  o layout que usa REM.
 
-# % (Porcentagem)
+## % (Porcentagem)
 
 A unidade % (porcentagem) é relativa ao tamanho do
  elemento pai. Ela é amplamente utilizada para definir larguras,
@@ -70,18 +70,18 @@ A unidade % (porcentagem) é relativa ao tamanho do
  elemento é calculado com base no tamanho do elemento
  pai.
 
-# Exemplo:
+## Exemplo:
 
 .container {
   width: 100%; /* o elemento ocupará 100% da largura do pai */
 }
 
- # Vantagens:
+ ## Vantagens:
  Perfeita para layouts fluidos e adaptativos.
  Permite que elementos se ajustem dinamicamente com o
  redimensionamento do container pai.
 
-# VW (Viewport Width)
+## VW (Viewport Width)
 
  A unidade VW (Viewport Width) é relativa à largura da janela de
  visualização (viewport). 1VW é igual a 1% da largura total da
@@ -92,13 +92,13 @@ A unidade % (porcentagem) é relativa ao tamanho do
  viewport (janela visível). Se a tela tiver 1200px de largura,
  50vw será igual a 600px.
 
-# Exemplo:
+## Exemplo:
 
 div {
 width: 50vw; /* o elemento ocupará 50% da largura da janela de visualização */
 }
 
-# Vantagens:
+## Vantagens:
  Excelente para layouts responsivos que precisam se
  adaptar a diferentes tamanhos de tela, como smartphones,
  tablets e desktops.
@@ -106,7 +106,7 @@ width: 50vw; /* o elemento ocupará 50% da largura da janela de visualização *
  porcentagem específica da tela, independentemente do
  tamanho do dispositivo.
 
-# PX (Pixels)
+## PX (Pixels)
 
 A unidade PX (pixel) é uma unidade absoluta e fixa, onde
  cada pixel corresponde a um ponto na tela. Diferente das
@@ -117,15 +117,23 @@ A unidade PX (pixel) é uma unidade absoluta e fixa, onde
  sempre 16 pixels, independentemente do tamanho da
  tela ou de outros elementos.
 
-#Exemplo:
+## Exemplo:
 
 p {
   font-size: 16px; /* Tamanho fixo de 16 pixels */
 }
 
-# Vantagens:
+## Vantagens:
  Controle exato e preciso sobre os tamanhos dos
  elementos.
  Útil para designs que requerem consistência em
  diferentes dispositivos, sem a necessidade de
  adaptação.
+
+## Considerações finais
+
+ | Unidade |               |Relativa a|                              |Melhor Uso|                   |Exemplo|
+
+  | REM |      | Tamanho da fonte do elemento raiz |    | Layouts escaláveis e consistentes |  | font-size: 2rem |
+
+     
